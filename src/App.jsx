@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import Functional from './Functional'
+import Functional from './Functional&props'
 import Jsx from './Jsx'
-import Message from './Message'
-import Welcome from './Welcome'
+import Message from './State'
+import Welcome from './Class&props'
+import CounterClass from './Counter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,9 +14,10 @@ function App() {
       <Functional name='Lyons'>
         <p>This is children props</p>
       </Functional>
+      <CounterClass />
       <Jsx />
       <Message />
-      <Welcome />
+      <Welcome name='Masawa' />
     </div>
   )
 }
