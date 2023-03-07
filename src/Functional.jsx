@@ -1,13 +1,12 @@
 import React from 'react'
 
-const Functional = () => {
+const Functional = (props) => {
   return (
     <div className="shopping-list">
       <h1>Shopping List for</h1>
       <ul>
-        <li>Instagram</li>
-        <li>WhatsApp</li>
-        <li>Oculus</li>
+        <li>{props.name}</li>
+        {props.children}
       </ul>
     </div>
   )
