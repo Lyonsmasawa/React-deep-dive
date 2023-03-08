@@ -5,6 +5,10 @@ import Jsx from './Jsx'
 import Message from './State'
 import Welcome from './Class&props'
 import CounterClass from './Counter'
+import Parent from './Parent'
+import ConditionalRendering from './ConditionalRendering'
+import ListRendering from './ListRendering'
+import Stylesheets from './Stylesheets'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,8 +20,12 @@ function App() {
       </Functional>
       <CounterClass />
       <Jsx />
+      <Parent />
       <Message />
       <Welcome name='Masawa' />
+      <ConditionalRendering />
+      <ListRendering />
+      <Stylesheets />
     </div>
   )
 }

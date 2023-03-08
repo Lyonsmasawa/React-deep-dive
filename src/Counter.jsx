@@ -9,12 +9,12 @@ export class Counter extends Component {
   }
 
   increment() {
-    // this.setState({
-    //   count : this.state.count + 1
-    // })
-    this.setState((prevState, props) => ({
-      count: prevState.count + props.addValue
-    }))
+    this.setState({
+      count : this.state.count + 1
+    })
+    // this.setState((prevState, props) => ({
+    //   count: prevState.count + props.addValue
+    // }))
   }
 
   decrement() {
