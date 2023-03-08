@@ -10,6 +10,8 @@ import ConditionalRendering from './ConditionalRendering'
 import ListRendering from './ListRendering'
 import Stylesheets from './Stylesheets'
 import Lifecycle from './Lifecycle'
+import FragmentDemo from './FragmentDemo'
+import PureComponents from './PureComponents'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +23,8 @@ function App() {
       </Functional>
       <CounterClass />
       <Jsx />
+      <FragmentDemo />
+      <PureComponents />
       <Parent />
       <Message />
       <Welcome name='Masawa' />
