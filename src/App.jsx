@@ -9,6 +9,7 @@ import Parent from './Parent'
 import ConditionalRendering from './ConditionalRendering'
 import ListRendering from './ListRendering'
 import Stylesheets from './Stylesheets'
+import Lifecycle from './Lifecycle'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +27,7 @@ function App() {
       <ConditionalRendering />
       <ListRendering />
       <Stylesheets />
+      <Lifecycle />
     </div>
   )
 }
