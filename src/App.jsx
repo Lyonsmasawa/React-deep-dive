@@ -12,6 +12,7 @@ import Stylesheets from './Stylesheets'
 import Lifecycle from './Lifecycle'
 import FragmentDemo from './FragmentDemo'
 import PureComponents from './PureComponents'
+import Memo from './Memo'
 
 function App() {
   const [count, setCount] = useState(0)

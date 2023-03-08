@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import Memo from './Memo'
 
 export class Message extends Component {
     render() {
         return (
-            <div>Message</div>
+           <Memo name='masawa' />
         )
     }
 }
