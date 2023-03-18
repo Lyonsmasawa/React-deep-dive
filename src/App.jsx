@@ -13,6 +13,7 @@ import Lifecycle from './Lifecycle'
 import FragmentDemo from './FragmentDemo'
 import PureComponents from './PureComponents'
 import Memo from './Memo'
+import PortalDemo from './PortalDemo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <Functional name='Lyons'>
-        <p>This is children props</p>
+        <p>This is children prop</p>
       </Functional>
       <CounterClass />
       <Jsx />
@@ -33,6 +34,7 @@ function App() {
       <ListRendering />
       <Stylesheets />
       <Lifecycle />
+      <PortalDemo />
     </div>
   )
 }
