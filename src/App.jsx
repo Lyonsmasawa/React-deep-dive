@@ -14,6 +14,8 @@ import FragmentDemo from './FragmentDemo'
 import PureComponents from './PureComponents'
 import Memo from './Memo'
 import PortalDemo from './PortalDemo'
+import { UserProvider } from './userContext'
+import User from './User'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,6 +37,9 @@ function App() {
       <Stylesheets />
       <Lifecycle />
       <PortalDemo />
+      <UserProvider value="Lyons">
+        <User />
+      </UserProvider>
     </div>
   )
 }
