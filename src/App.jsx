@@ -16,6 +16,7 @@ import Memo from './Memo'
 import PortalDemo from './PortalDemo'
 import { UserProvider } from './userContext'
 import User from './User'
+import Hooks from './Hooks'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -40,6 +41,7 @@ function App() {
       <UserProvider value="Lyons">
         <User />
       </UserProvider>
+      <Hooks />
     </div>
   )
 }
