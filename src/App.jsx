@@ -17,6 +17,8 @@ import PortalDemo from './PortalDemo'
 import { UserProvider } from './userContext'
 import User from './User'
 import Hooks from './Hooks'
+import UseEffects from './UseEffects'
+import CleanUp from './CleanUp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,7 +43,9 @@ function App() {
       <UserProvider value="Lyons">
         <User />
       </UserProvider>
+      <CleanUp />
       <Hooks />
+      <UseEffects />
     </div>
   )
 }
