@@ -22,9 +22,15 @@ const UseEffects = () => {
     setY(e.clientY)
   }
 
-  // only on initial render - componentdidmount
+  // only on initial render - componentdidmount //the return is clean up for diunmount
   useEffect(() => {
+    console.log('called')
     window.addEventListener('mousemove', logMousePosition)
+
+    return () => {
+      console.log("unmount")
+      window.removeEventListener('mouseover', logMousePosition)
+    }
   }, [])
 
   // 
