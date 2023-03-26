@@ -19,6 +19,7 @@ import User from './User'
 import Hooks from './Hooks'
 import UseEffects from './UseEffects'
 import CleanUp from './CleanUp'
+import CounterWithReducer from './CounterWithReducer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -46,6 +47,7 @@ function App() {
       <CleanUp />
       <Hooks />
       <UseEffects />
+      <CounterWithReducer />
     </div>
   )
 }
