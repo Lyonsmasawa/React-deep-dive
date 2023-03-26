@@ -21,6 +21,7 @@ import UseEffects from './UseEffects'
 import CleanUp from './CleanUp'
 import CounterWithReducer from './CounterWithReducer'
 import CounterWithReducerComplex from './CounterWithReducerComplex'
+import FetchDataWithUseeducer from './FetchDataWithUseeducer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -50,6 +51,7 @@ function App() {
       <UseEffects />
       <CounterWithReducer />
       <CounterWithReducerComplex />
+      <FetchDataWithUseeducer />
     </div>
   )
 }
